@@ -12,7 +12,7 @@ export default function handler(
     res.status(200).json({ 
       type: 'form',
       title: 'dTech.vision',
-      url: 'http://localhost:3001', // make sure this is your public URL e.g. http://localhost:3000 for local testing
+      url: 'https://compose-actions.vercel.app', // make sure this is your public URL e.g. http://localhost:3000 for local testing
     });
   } else if (req.method === 'GET') {
     res.status(200).json({
@@ -20,8 +20,8 @@ export default function handler(
         "name": "Create Poll",
         "icon": "checkbox", // supported list: https://docs.farcaster.xyz/reference/actions/spec#valid-icons
         "description": "Create a poll frame",
-        "aboutUrl": "https://your-app-server.example.com/about",
-        "imageUrl": "https://your-app-server.example.com/static/logo.png",
+        "aboutUrl": "https://compose-actions.vercel.app/about",
+        "imageUrl": "https://compose-actions.vercel.app/static/logo.png",
         "action": {
           "type": "post",
         }
